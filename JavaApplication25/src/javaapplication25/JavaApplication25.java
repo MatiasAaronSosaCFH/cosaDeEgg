@@ -23,7 +23,7 @@ public class JavaApplication25 {
         int cont = 0;
         System.out.println("Cuantos numeros vamos a evaluar");
         int cantNum = scaneando.nextInt();
-        int numDet, numMax;
+        int numDet, numMax, numMin;
 
         while (cont == cantNum) {
 
@@ -34,14 +34,12 @@ public class JavaApplication25 {
             if (numDet > numScan) {
 
                 numMax = numDet;
-            }else{
-                
-                numMin =numDet;
+            } else {
+
+                numMin = numDet;
             }
 
             cont += 1;
         }
-
     }
-
 }

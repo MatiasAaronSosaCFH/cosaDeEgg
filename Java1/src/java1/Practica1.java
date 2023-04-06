@@ -13,7 +13,7 @@ import java.util.Scanner;
  *
  * @author 54117
  */
-public class Java1 {
+public class Practica1 {
 
     /**
      * @param args the command line arguments
