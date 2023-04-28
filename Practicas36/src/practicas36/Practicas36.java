@@ -6,7 +6,6 @@
 package practicas36;
 
 import java.util.Arrays;
-import java.util.Random;
 import java.util.Scanner;
 
 /**
@@ -67,10 +66,9 @@ public class Practicas36 {
                 if(i == 0){
                     columna = columna + matriz[j][i];
                 }
-                if(i == 1){
+                if(j == 1){
                     fila = fila + matriz[i][j];
                 }
-                
                 
                 if(i == j){
                     diagonal = diagonal + matriz[i][j];

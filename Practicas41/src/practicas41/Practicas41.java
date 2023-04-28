@@ -20,13 +20,15 @@ public class Practicas41 {
         
         String[][] sopa = new String[20][20];
         
+        
     }
     
     public static void rellenando(String[][] matriz){
         
         Scanner leer = new Scanner(System.in).useDelimiter("\n");
         
-        System.out.println("A continuacion te pediremos 5 palabras, si no tienen los parametros requeridos" + "\n"
+        System.out.println("A continuacion te pediremos 5 palabras, si no "
+                + "tienen los parametros requeridos" + "\n"
                 + "la palabra no sera tomada en cuenta y pediremos otra");
         
         String palabra = "";
@@ -37,6 +39,7 @@ public class Practicas41 {
             for(int j = 0; j < 20; j++){
                 
                 boolean salir = true;
+                
                 do {   
                     
                     if(cont == 5){
@@ -52,14 +55,13 @@ public class Practicas41 {
                     }
                     
                 } while (salir);
+                
                 if(cont <= 5){
                     matriz[i][(int)(Math.round(Math.random()*20))] = palabra.substring(i, i+1);
                 }else if(matriz[i][j] == null){
                     matriz[i][j] = (int)((Math.round(Math.random()*9))) + "";
                 }
-                
             }
         }
     }
-    
 }

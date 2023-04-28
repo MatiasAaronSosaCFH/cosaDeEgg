@@ -5,6 +5,8 @@
  */
 package practicas35;
 
+import java.util.Arrays;
+
 /**
  *
  * @author 54117
@@ -26,6 +28,10 @@ public class Practicas35 {
                 matriz[i][j] = cont;
                 cont++;
             }
+        }
+        
+        for(int[] ing : matriz){
+            System.out.println(Arrays.toString(ing));
         }
         
         for(int i = 0; i < 4; i++){
