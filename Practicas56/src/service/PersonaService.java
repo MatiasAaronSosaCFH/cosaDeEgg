@@ -31,11 +31,11 @@ public class PersonaService {
         
         System.out.println("Cual es tu nombre ?");
         persona1.setNombre(leerPersonaService.next());
-        System.out.println("Cual es tu persona ?");
+        System.out.println("Cual es tu edad ?");
         persona1.setEdad(leerPersonaService.nextInt());
-        System.out.println("Cual es tu peso ? ");
+        System.out.println("Cual es tu peso (en kilogramos) ? ");
         persona1.setPeso(leerPersonaService.nextDouble());
-        System.out.println("Cuel es tu altura ?");
+        System.out.println("Cuel es tu altura (en metros) ?");
         persona1.setAltura(leerPersonaService.nextDouble());
         boolean salir = false;
         
@@ -50,4 +50,16 @@ public class PersonaService {
         } while (salir);
     }
     
+    public static int calcularIMC(Persona persona1){ 
+        int imc = 0;
+        double calc = persona1.getPeso()/(Math.pow(persona1.getAltura(), 2));
+        if(calc < 20){ 
+            imc = -1;
+        }else if(calc > 19 && calc < 26){ 
+            imc = 0;
+        }else{ 
+            imc = 1;
+        }
+        return imc;
+    }
 }

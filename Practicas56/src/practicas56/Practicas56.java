@@ -46,6 +46,7 @@ public class Practicas56 {
 
         int contMay = 0;
         int contMen = 0;
+        
         int contImcMen = 0;
         int contImcIgu = 0;
         int contImcMay = 0;

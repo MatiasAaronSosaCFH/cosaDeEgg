@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Practicas86">
+  <ClassDiagramComponents>
+    <Class name="Alumno" package="entidades" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="nombreCompleto" type="String" visibility="private"/>
+        <Field name="dni" type="Long" visibility="private"/>
+        <Field name="cantidadDeVotos" type="Integer" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombreCompleto"/>
+          <Argument type="Long" name="dni"/>
+          <Argument type="Integer" name="cantidadDeVotos"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombreCompleto" returnType="String" visibility="public"/>
+        <Method name="setNombreCompleto" returnType="void" visibility="public">
+          <Argument type="String" name="nombreCompleto"/>
+        </Method>
+        <Method name="getDni" returnType="Long" visibility="public"/>
+        <Method name="setDni" returnType="void" visibility="public">
+          <Argument type="Long" name="dni"/>
+        </Method>
+        <Method name="getCantidadDeVotos" returnType="Integer" visibility="public"/>
+        <Method name="setCantidadDeVotos" returnType="void" visibility="public">
+          <Argument type="Integer" name="cantidadDeVotos"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Practicas86" package="practicas86" visibility="public" xPosition="336.0" yPosition="478.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Simulacion" package="services" visibility="public" xPosition="617.0" yPosition="48.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="returnNombre" returnType="String" visibility="public" isStatic="true">
+          <Argument type="String[]" name="nombres"/>
+        </Method>
+        <Method name="returnApellido" returnType="String" visibility="public" isStatic="true">
+          <Argument type="String[]" name="apellidos"/>
+        </Method>
+        <Method name="returnDni" returnType="Long" visibility="public" isStatic="true">
+          <Argument type="Long[]" name="dnis"/>
+        </Method>
+        <Method name="daNombres" returnType="String[]" visibility="public" isStatic="true"/>
+        <Method name="daApellidos" returnType="String[]" visibility="public" isStatic="true"/>
+        <Method name="daDni" returnType="Long" visibility="public" isStatic="true"/>
+        <Method name="creaListaDnis" returnType="Long[]" visibility="public" isStatic="true"/>
+        <Method name="crearAlumnoAleatorio" returnType="Alumno" visibility="public" isStatic="true">
+          <Argument type="String[]" name="nombres"/>
+          <Argument type="String[]" name="apellidos"/>
+          <Argument type="Long[]" name="dnis"/>
+        </Method>
+        <Method name="agruparAlumnos" returnType="ArrayList&lt;Alumno&gt;" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="services.Simulacion" target="entidades.Alumno" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
